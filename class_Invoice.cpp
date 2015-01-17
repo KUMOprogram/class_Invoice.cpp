@@ -131,8 +131,8 @@ system("color f1");
 		
 		if (choose==1)
 		{
-            parts.push_back(newpart());
-            cout<<endl;
+            		parts.push_back(newpart());
+            		cout<<endl;
 		}
 		
 		if (choose==2)
