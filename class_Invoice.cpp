@@ -39,7 +39,7 @@ class Invoice
 
 Invoice::Invoice(string xpart_number, string xpart_description, int xquantity, int xprice)
 {
-    part_number=xpart_number;
+    	part_number=xpart_number;
 	part_description=xpart_description;
 	quantity=xquantity;
 	price=xprice;
@@ -109,7 +109,7 @@ void menu()
 	cout<<" Edit Part ----------------------- 3"<<endl;
 	cout<<" Invoice Amounts ----------------- 4"<<endl;
 	cout<<" Close --------------------------- 0"<<endl<<endl;
-    cout<<" CHOICE: ";
+    	cout<<" CHOICE: ";
 }
 
 Invoice newpart();
@@ -142,7 +142,7 @@ system("color f1");
 		
 		if (choose==3)
 		{
-            if (parts.size()==0)
+            		if (parts.size()==0)
 			{
 				cout<<" NO PARTS REGISTERED YET"<<endl<<endl;
 			}else{
@@ -172,7 +172,7 @@ system("pause");
 
 Invoice newpart()
 {
-    string part_number;
+    	string part_number;
 	string part_description;
 	int quantity;
 	int price;
@@ -232,7 +232,7 @@ void print_amounts(vector <Invoice> parts)
 
 vector <Invoice> edit_parts(vector <Invoice> parts)
 {
-	    string part_number;
+	    	string part_number;
 		string part_description;
 		int quantity;
 		int price;
